@@ -1,0 +1,75 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 
+  customer_ref_id: 
+  limit: MyString
+  100: MyString
+  customer_invoice_id: 
+  limit: MyString
+  100: MyString
+  customer_name: MyString
+  string,: MyString
+  limit: MyString
+  100: MyString
+  address: MyString
+  string,: MyString
+  limit: MyString
+  100: MyString
+  city: MyString
+  string,: MyString
+  limit: MyString
+  100: MyString
+  state: MyString
+  string,: MyString
+  limit: MyString
+  30: MyString
+  zip: MyString
+  string,: MyString
+  limit: MyString
+  12: MyString
+  subdivision: MyString
+  string,: MyString
+  limit: 
+  type: 
+  string: MyString
+  30,: MyString
+  is_open: MyString
+  boolean: MyString
+
+two:
+  id: 
+  customer_ref_id: 
+  limit: MyString
+  100: MyString
+  customer_invoice_id: 
+  limit: MyString
+  100: MyString
+  customer_name: MyString
+  string,: MyString
+  limit: MyString
+  100: MyString
+  address: MyString
+  string,: MyString
+  limit: MyString
+  100: MyString
+  city: MyString
+  string,: MyString
+  limit: MyString
+  100: MyString
+  state: MyString
+  string,: MyString
+  limit: MyString
+  30: MyString
+  zip: MyString
+  string,: MyString
+  limit: MyString
+  12: MyString
+  subdivision: MyString
+  string,: MyString
+  limit: 
+  type: 
+  string: MyString
+  30,: MyString
+  is_open: MyString
+  boolean: MyString
