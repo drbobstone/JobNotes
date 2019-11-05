@@ -2,7 +2,7 @@
 <%= form_for :job, url: jobs_path do |f| %>
     <p>
         <%= f.label :customer_ref_id %><br>
-        <%= f.text_field :customer_ref_id %>
+        <%= f.text_field(:customer_ref_id, {:class => 'form-control'}) %>
     </p>
     <p>
         <%= f.label :customer_invoice_id %><br>
