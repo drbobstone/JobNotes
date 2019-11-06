@@ -3,20 +3,23 @@
 <h3>TODO: add theming class for pretty</h3>
 
 <% @jobs.each do |job| %>
-    <div class="container">
-        <div class="card-deck mb-3 text-center">
-            <div class="card mb-4 shadow-sm">
+<div class="container">
+    <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 shadow-sm">
             <div class="card-header">
                 <div class="col-12">Sub:<%= job.subdivision %> Lot: <%= job.customer_name %></div>
             </div>
             <div class="card-body">
 
                 <div class="row mb-3">
-                    <div class="col-md-4 themed-grid-col"><%= job.customer_ref_id %> <%= job.customer_invoice_id %></div>
-                    <div class="col-md-4 themed-grid-col"><%= job.address %> <%= job.city %> <%= job.state %> <%= job.zip %></div>
-                    <div class="col-md-4 themed-grid-col"><%= job.is_open ? "OPEN" : "Closed" %>  <small>created:<%= job.created_at %></small></div>
+                    <div class="col-md-4 themed-grid-col"><%= job.customer_ref_id %> <%= job.customer_invoice_id %>
+                    </div>
+                    <div class="col-md-4 themed-grid-col"><%= job.address %> <%= job.city %> <%= job.state %>
+                        <%= job.zip %></div>
+                    <div class="col-md-4 themed-grid-col"><%= job.is_open ? "OPEN" : "Closed" %>
+                        <small>created:<%= job.created_at %></small></div>
                 </div>
             </div>
         </div>
     </div>
-<% end %>
+    <% end %>

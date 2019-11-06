@@ -4,5 +4,7 @@ Rails.application.routes.draw do
 
   get 'about' => 'pages#about'
 
+  get 'search' => 'jobs#index', :as => 'search_page'
+
   resources :jobs
 end

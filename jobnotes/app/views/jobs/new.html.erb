@@ -1,42 +1,47 @@
 <h1>Add Job</h1>
 <%= form_for :job, url: jobs_path do |f| %>
-    <p>
-        <%= f.label :customer_ref_id %><br>
-        <%= f.text_field(:customer_ref_id, {:class => 'form-control'}) %>
-    </p>
-    <p>
-        <%= f.label :customer_invoice_id %><br>
-        <%= f.text_field :customer_invoice_id %>
-    </p>
-    <p>
-        <%= f.label :customer_name %><br>
-        <%= f.text_field :customer_name %>
-    </p>
-    <p>
-        <%= f.label :address %><br>
-        <%= f.text_field :address %>
-    </p>
-    <p>
-        <%= f.label :city %><br>
-        <%= f.text_field :city %>
-    </p>
-    <p>
-        <%= f.label :state %><br>
-        <%= f.text_field :state %>
-    </p>
-    <p>
-        <%= f.label :zip %><br>
-        <%= f.text_field :zip %>
-    </p>
-    <p>
-        <%= f.label :subdivision %><br>
-        <%= f.text_field :subdivision %>
-    </p>
-    <p>
-        <%= f.label :job_type %><br>
-        <%= f.text_field :job_type %>
-    </p>
-    <p>
-        <%= f.submit %>
-    </p>
+<% if @job.errors.any? %>
+<% @job.errors.full_messages.each do |msg| %>
+<div class="alert alert-danger"><%= msg %></div>
+<% end %>
+<% end %>
+<p>
+    <%= f.label :customer_ref_id %><br>
+    <%= f.text_field(:customer_ref_id, {:class => 'form-control'}) %>
+</p>
+<p>
+    <%= f.label :customer_invoice_id %><br>
+    <%= f.text_field :customer_invoice_id %>
+</p>
+<p>
+    <%= f.label :customer_name %><br>
+    <%= f.text_field :customer_name %>
+</p>
+<p>
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+</p>
+<p>
+    <%= f.label :city %><br>
+    <%= f.text_field :city %>
+</p>
+<p>
+    <%= f.label :state %><br>
+    <%= f.text_field :state %>
+</p>
+<p>
+    <%= f.label :zip %><br>
+    <%= f.text_field :zip %>
+</p>
+<p>
+    <%= f.label :subdivision %><br>
+    <%= f.text_field :subdivision %>
+</p>
+<p>
+    <%= f.label :job_type %><br>
+    <%= f.text_field :job_type %>
+</p>
+<p>
+    <%= f.submit({:class => 'btn btn-primary'}) %>
+</p>
 <% end %>

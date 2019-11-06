@@ -10,21 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20191104171129) do
-
-  create_table "jobs", force: :cascade do |t|
-    t.string   "customer_ref_id",     limit: 100,                null: false
-    t.string   "customer_invoice_id", limit: 100
-    t.string   "customer_name",       limit: 100,                null: false
-    t.string   "address",             limit: 100
-    t.string   "city",                limit: 100
-    t.string   "state",               limit: 30
-    t.string   "zip",                 limit: 12
-    t.string   "subdivision",         limit: 50
-    t.string   "job_type",            limit: 50
-    t.boolean  "is_open",                         default: true
-    t.datetime "created_at",                                     null: false
-    t.datetime "updated_at",                                     null: false
+ActiveRecord::Schema.define(version: 20_191_104_171_129) do
+  create_table 'jobs', force: :cascade do |t|
+    t.string   'customer_ref_id',     limit: 100, null: false
+    t.string   'customer_invoice_id', limit: 100
+    t.string   'customer_name',       limit: 100, null: false
+    t.string   'address',             limit: 100
+    t.string   'city',                limit: 100
+    t.string   'state',               limit: 30
+    t.string   'zip',                 limit: 12
+    t.string   'subdivision',         limit: 50
+    t.string   'job_type',            limit: 50
+    t.boolean  'is_open', default: true
+    t.datetime 'created_at',                                     null: false
+    t.datetime 'updated_at',                                     null: false
   end
-
 end
