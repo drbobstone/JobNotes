@@ -3,8 +3,8 @@
 <h3>TODO: add theming class for pretty</h3>
 
 <% @jobs.each do |job| %>
-<div class="container">
-    <div class="card-deck mb-3 text-center">
+<div class="container job-result-container">
+    <div class="card-deck mb-3 text-center job-card">
         <div class="card mb-4 shadow-sm">
             <div class="card-header">
                 <div class="col-12">Sub:<%= job.subdivision %> Lot: <%= job.customer_name %></div>

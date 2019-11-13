@@ -3,6 +3,12 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 //@import "bootstrap";
 
-$theme-colors: (
-  "custom-color": #900
-)
+ .job-result-container {
+   width: 95%;
+
+   .job-card {
+     display: flex;
+     align-items: stretch;
+   }
+ }
+
